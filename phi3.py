@@ -6,8 +6,8 @@ import base64
 
 st.set_page_config(layout="wide")
 
-img1_path = r"C:\Users\jofra\Desktop\llama 3\background.jpg"
-img2_path = r"C:\Users\jofra\Desktop\ADSAA_Work\Main\Gemini_Generated_Image (2).jpg"
+img1_path = r"background.jpg"
+img2_path = r"Gemini_Generated_Image (2).jpg"
 background_generator = BackgroundCSSGenerator(img1_path, img2_path)
 page_bg_img = background_generator.generate_background_css()
 st.markdown(page_bg_img, unsafe_allow_html=True)
