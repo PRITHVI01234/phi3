@@ -6,8 +6,8 @@ import base64
 
 st.set_page_config(layout="wide")
 
-img1_path = r"background.jpg"
-img2_path = r"Gemini_Generated_Image (2).jpg"
+img1_path = "background.jpg"
+img2_path = "Gemini_Generated_Image (2).jpg"
 background_generator = BackgroundCSSGenerator(img1_path, img2_path)
 page_bg_img = background_generator.generate_background_css()
 st.markdown(page_bg_img, unsafe_allow_html=True)
